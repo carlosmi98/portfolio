@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin: 1rem auto;
+}
+
+.footer-icons a {
+    font-size: 2rem;
+    color: var(--color-muted);
+    display: flex;
+    align-items: center;
+    transition: color var(--transition), transform var(--transition);
+}
+
+.footer-icons a:hover {
+    color: var(--color-white);
+    transform: scale(1.15);
+}

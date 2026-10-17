@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+    .nav {
+        margin: 2rem auto;
+    }
+
+    .nav-item {
+        display: flex;
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-decoration: none;
+        color: var(--color-muted);
+        font-size: 0.85rem;
+        transition: color var(--transition);
+    }
+
+    .nav-link::before {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 1px;
+        background-color: var(--color-muted);
+    }
+}
