@@ -1,0 +1,8 @@
+.sidebar {
+    width: var(--sidebar-width);
+    min-height: 100vh;
+    background-color: var(--bg-sidebar);
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+}

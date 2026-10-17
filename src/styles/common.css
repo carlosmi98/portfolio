@@ -1,0 +1,48 @@
+:root {
+    /* --- Colores: Sidebar (Izquierda) --- */
+    --bg-sidebar: #162846;
+    --color-white: #ffffff;
+    --color-accent: #93c5fd;
+    /* Rol 'Web developer', borde foto, acentos */
+    --color-text-secondary: #cbd5e1;
+    /* Tagline del perfil (más claro que el menú) */
+    --color-muted: #94a3b8;
+    /* Enlaces inactivos del nav y barrita */
+
+    /* --- Colores: Contenido Principal (Derecha) --- */
+    --bg-main: #e8f0fe;
+    /* Fondo azul claro de la columna derecha */
+    --text-dark: #0f172a;
+    /* Títulos y texto en fondo claro */
+    --bg-card: #ffffff;
+    /* Fondo de tarjetas (tecnologías, proyectos) */
+
+    /* --- Estructura --- */
+    --sidebar-width: 420px;
+
+    /* --- Bordes redondeados --- */
+    --radius-md: 8px;
+    /* Para tarjetas e iconos de tecnologías */
+    --radius-full: 9999px;
+    /* Para pastillas/tags (React, Django...) y botones */
+
+    /* --- Transiciones --- */
+    --transition: 0.3s ease;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
