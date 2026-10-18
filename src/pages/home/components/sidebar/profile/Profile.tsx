@@ -1,21 +1,21 @@
 import { sidebarData } from "../../../../../data/portfolioData";
 import perfilImg from "../../../../../assets/home/perfil.png";
-import "./Profile.css";
+import styles from "./Profile.module.css";
 
 export const Profile = () => {
   return (
-    <header className="sidebar-profile">
-      <div className="profile-img-container">
+    <header className={styles.profile}>
+      <div className={styles.imgContainer}>
         <img
           src={perfilImg}
           alt={sidebarData.name}
-          className="profile-img"
+          className={styles.img}
         />
       </div>
 
-      <h1 className="profile-name">{sidebarData.name}</h1>
-      <p className="profile-role">{sidebarData.role}</p>
-      <p className="profile-tagline">{sidebarData.tagline}</p>
+      <h1 className={styles.name}>{sidebarData.name}</h1>
+      <p className={styles.role}>{sidebarData.role}</p>
+      <p className={styles.tagline}>{sidebarData.tagline}</p>
     </header>
   );
 };

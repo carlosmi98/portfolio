@@ -1,12 +1,12 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import './Footer.css';
+import styles from './Footer.module.css';
 
 export const Footer = () => {
     return (
-        <div className="footer">
-            <ul className="footer-icons">
+        <div className={styles.footer}>
+            <ul className={styles.footerIcons}>
                 <li>
                     <a href="#" target="_blank" rel="noopener noreferrer">
                         <FaGithub size={32} />
