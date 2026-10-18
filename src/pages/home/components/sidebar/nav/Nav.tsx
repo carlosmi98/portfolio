@@ -1,30 +1,28 @@
-import { NavLink } from "react-router-dom"
-import "./Nav.css"
+import { NavLink } from "react-router-dom";
+import styles from "./Nav.module.css";
 
 export const Nav = () => {
-
-
-
     return (
-        <nav className="nav">
-            <ul className="nav-list">
-                <li className="nav-item">
-                    <NavLink to="#" className="nav-link">About me</NavLink>
+        <nav className={styles.nav}>
+            <ul className={styles.navList}>
+                <li className={styles.navItem}>
+                    <NavLink to="#" className={styles.navLink}>About me</NavLink>
                 </li>
-                <li className="nav-item">
-                    <NavLink to="#" className="nav-link">Technologies</NavLink>
+                <li className={styles.navItem}>
+                    <NavLink to="#" className={styles.navLink}>Technologies</NavLink>
                 </li>
-                <li className="nav-item">
-                    <NavLink to="#" className="nav-link">Experience</NavLink>
+                <li className={styles.navItem}>
+                    <NavLink to="#" className={styles.navLink}>Experience</NavLink>
                 </li>
-                <li className="nav-item">
-                    <NavLink to="#" className="nav-link">Projects</NavLink>
+                <li className={styles.navItem}>
+                    <NavLink to="#" className={styles.navLink}>Projects</NavLink>
                 </li>
-                <li className="nav-item">
-                    <NavLink to="#" className="nav-link">Contact</NavLink>
+                <li className={styles.navItem}>
+                    <NavLink to="#" className={styles.navLink}>Contact</NavLink>
                 </li>
-
             </ul>
         </nav>
-    )
-}
+    );
+};
+
+export default Nav;

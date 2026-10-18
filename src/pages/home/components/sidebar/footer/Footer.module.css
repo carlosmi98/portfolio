@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+    }
+
+    .footerIcons {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        margin: 1rem auto;
+    }
+
+    .footerIcons a {
+        font-size: 2rem;
+        color: var(--color-muted);
+        display: flex;
+        align-items: center;
+        transition: color var(--transition), transform var(--transition);
+    }
+
+    .footerIcons a:hover {
+        color: var(--color-white);
+        transform: scale(1.15);
+    }
+}

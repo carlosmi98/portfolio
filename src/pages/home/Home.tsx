@@ -1,10 +1,11 @@
 import Profile from "./components/sidebar/profile/Profile";
 import { Nav } from "./components/sidebar/nav/Nav";
 import { Footer } from "./components/sidebar/footer/Footer";
-import "./Home.css";
+import styles from "./Home.module.css";
+
 export const Home = () => {
   return (
-    <aside className="sidebar">
+    <aside className={styles.sidebar}>
       <Profile />
       <Nav />
       <Footer />
