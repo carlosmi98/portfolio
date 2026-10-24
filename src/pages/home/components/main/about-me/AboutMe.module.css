@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 3rem 1rem;
+    }
+
+    .h2 {
+        padding: 1rem 0;
+    }
+
+    .p {
+        font-size: 1.15rem;
+    }
+
+}
