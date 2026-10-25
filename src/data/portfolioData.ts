@@ -48,27 +48,22 @@ export const technologies: Technologies = {
       skills: [
         { name: "React", icon: "react" },
         { name: "JavaScript", icon: "javascript" },
+        { name: "TypeScript", icon: "typescript" },
         { name: "HTML5", icon: "html5" },
-        { name: "CSS3", icon: "css3" },
-        { name: "Angular", icon: "angular" },
-        { name: "Vite", icon: "vite" },
+        { name: "CSS3", icon: "css3" }
       ],
     },
     {
       name: "Backend",
       skills: [
         { name: "Django", icon: "django" },
-        { name: "Python", icon: "python" },
         { name: "Java", icon: "java" },
-        { name: "Django REST", icon: "djangorest" },
-        { name: "Spring Boot", icon: "springboot" },
       ],
     },
     {
       name: "Databases",
       skills: [
-        { name: "PostgreSQL", icon: "postgresql" },
-        { name: "MySQL", icon: "mysql" },
+        { name: "PostgreSQL", icon: "postgresql" }
       ],
     },
     {

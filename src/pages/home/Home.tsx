@@ -1,15 +1,13 @@
-import Profile from "./components/sidebar/profile/Profile";
-import { Nav } from "./components/sidebar/nav/Nav";
-import { Footer } from "./components/sidebar/footer/Footer";
+import SidebarContainer from "./components/sidebar/SidebarContainer";
+import MainContainer from "./components/main/MainContainer";
 import styles from "./Home.module.css";
 
 export const Home = () => {
   return (
-    <aside className={styles.sidebar}>
-      <Profile />
-      <Nav />
-      <Footer />
-    </aside>
+    <div className={styles.homeContainer}>
+      <SidebarContainer />
+      <MainContainer />
+    </div>
   );
 };
 
