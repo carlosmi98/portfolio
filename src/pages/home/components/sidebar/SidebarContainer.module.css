@@ -1,8 +1,19 @@
-.sidebar {
-    width: var(--sidebar-width);
-    min-height: 100vh;
-    background-color: var(--bg-sidebar);
-    padding: 3rem 2rem;
-    display: flex;
-    flex-direction: column;
-}
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-sidebar);
+        padding: 1rem;
+    }
+
+    @media (min-width: 1024px) {
+
+
+        .sidebar {
+            width: var(--sidebar-width);
+            max-height: 100vh;
+            position: sticky;
+            top: 0;
+            border-radius: 10px;
+        }
+
+    }
