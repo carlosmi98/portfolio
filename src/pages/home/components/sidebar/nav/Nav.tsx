@@ -5,6 +5,8 @@ import { FaBars } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
 
 import { sidebarData } from "../../../../../data/portfolioData";
+
+import { Footer } from "../footer/Footer";
 import styles from "./Nav.module.css";
 
 export const Nav = () => {
@@ -19,26 +21,33 @@ export const Nav = () => {
     };
 
     return (
-        <nav className={styles.nav}>
-            <button onClick={handleNavbar} className={styles.menuButton} aria-label="Toggle menu">
-                {isOpen ? <FaTimes /> : <FaBars />}
-            </button>
-            <ul className={`${styles.navList} ${isOpen ? styles.open : ""}`}>
-                {sidebarData.navLinks.map((link) => (
-                    <li key={link.id} className={styles.navItem}>
-                        {link.path ? (
-                            <NavLink onClick={handleNavClick} to={link.path} className={styles.navLink}>
-                                {link.label}
-                            </NavLink>
-                        ) : (
-                            <a onClick={handleNavClick} href={link.href} className={styles.navLink}>
-                                {link.label}
-                            </a>
-                        )}
-                    </li>
-                ))}
-            </ul>
-        </nav>
+        <>
+            <nav className={styles.nav}>
+                <button onClick={handleNavbar} className={styles.menuButton} aria-label="Toggle menu">
+                    {isOpen ? <FaTimes /> : <FaBars />}
+                </button>
+                <div className={`${styles.menuContainer} ${isOpen ? styles.open : ""}`}>
+                    <ul className={`${styles.navList}`}>
+                        {sidebarData.navLinks.map((link) => (
+                            <li key={link.id} className={styles.navItem}>
+                                {link.path ? (
+                                    <NavLink onClick={handleNavClick} to={link.path} className={styles.navLink}>
+                                        {link.label}
+                                    </NavLink>
+                                ) : (
+                                    <a onClick={handleNavClick} href={link.href} className={styles.navLink}>
+                                        {link.label}
+                                    </a>
+                                )}
+                            </li>
+                        ))}
+                    </ul>
+                    <div className={styles.mobileFooter}>
+                        <Footer />
+                    </div>
+                </div>
+            </nav>
+        </>
     );
 };
 

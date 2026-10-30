@@ -1,9 +1,3 @@
-.section {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 2rem;
-}
-
 .category {
     display: flex;
     flex-direction: column;
@@ -11,8 +5,8 @@
 
 .skills {
     display: flex;
-    margin: 1rem 0;
-    gap: 0.5rem;
+    margin: var(--space-md) 0;
+    gap: var(--space-sm);
     flex-wrap: wrap;
     justify-content: flex-start
 }
@@ -22,27 +16,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    padding: var(--space-sm);
     width: 20%;
     background-color: var(--bg-card);
     border: 1px solid var(--bg-sidebar);
     border-radius: var(--radius-md);
-}
-
-.h2 {
-    font-size: 1.5rem;
-    padding: 0;
-}
-
-.h3 {
-    font-size: 1.25rem;
-
-    padding: 0;
-}
-
-.p {
-    padding: 0 0 1rem 0;
-    font-size: 1rem;
 }
 
 .icon {
@@ -50,34 +28,32 @@
     background-color: var(--bg-card);
     color: var(--brand-color);
     transition: var(--transition);
-    border-radius: 10px;
-    padding: 5px;
+    border-radius: var(--radius-md);
+    padding: var(--space-xs);
 }
 
 .iconName {
-    font-size: 0.85rem;
-    font-weight: 800;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-bold);
 }
 
 @media (min-width: 1024px) {
-    .section {
-        padding: 1rem 3rem;
-    }
 
     .skills {
         display: grid;
         grid-template-columns: repeat(var(--columns), 1fr);
-        gap: 2rem;
+        gap: var(--space-lg);
 
     }
 
     .skillCard {
+        width: 100%;
         transition: var(--transition);
     }
 
     .skillCard:hover {
         transform: translateY(-4px);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+        box-shadow: var(--shadow-card);
     }
 
     .skillCard:hover .icon,
@@ -93,8 +69,8 @@
     }
 
     .iconName {
-        font-size: 0.95rem;
-        font-weight: 800;
+        font-size: var(--fs-sm);
+        font-weight: var(--fw-bold);
     }
 
 }

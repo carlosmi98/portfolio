@@ -20,15 +20,14 @@
     z-index: 100;
 }
 
-.navList {
+.menuContainer {
     display: none;
 }
 
-.navList.open {
+.menuContainer.open {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 6rem 2rem;
+    padding: 6rem 2rem 3rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -36,6 +35,17 @@
     height: 100vh;
     background-color: var(--bg-sidebar);
     z-index: 99;
+}
+
+.mobileFooter {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    margin-top: auto;
+}
+
+.menuContainer.open .navLink {
+    padding-bottom: 1rem;
 }
 
 .navLink {
@@ -81,4 +91,5 @@
         background-color: var(--color-white);
         transition: all var(--transition);
     }
+
 }

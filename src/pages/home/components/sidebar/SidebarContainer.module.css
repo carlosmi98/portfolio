@@ -2,7 +2,11 @@
         display: flex;
         flex-direction: column;
         background-color: var(--bg-sidebar);
-        padding: 1rem;
+        padding: var(--space-md);
+    }
+
+    .footerContainer {
+        display: none;
     }
 
     @media (min-width: 1024px) {
@@ -13,7 +17,14 @@
             max-height: 100vh;
             position: sticky;
             top: 0;
-            border-radius: 10px;
+            border-radius: var(--radius-md);
+        }
+
+        .footerContainer {
+            display: flex;
+            margin-top: auto;
+            align-items: center;
+            justify-content: center;
         }
 
     }
