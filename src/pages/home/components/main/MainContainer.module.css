@@ -1,5 +1,5 @@
 .mainContent {
     flex: 1;
     background-color: var(--bg-main);
-    border-radius: 10px;
+    border-radius: var(--radius-md);
 }

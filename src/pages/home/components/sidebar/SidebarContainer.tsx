@@ -9,7 +9,9 @@ export const SidebarContainer = () => {
         <aside className={styles.sidebar}>
             <Profile />
             <Nav />
-            <Footer />
+            <div className={styles.footerContainer}>
+                <Footer />
+            </div>
         </aside>
     )
 }

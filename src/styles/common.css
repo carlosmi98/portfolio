@@ -1,37 +1,77 @@
 :root {
-    /* --- Colores: Sidebar (Izquierda) --- */
+    /* --- Colores: Sidebar --- */
     --bg-sidebar: #162846;
     --color-white: #ffffff;
     --color-accent: #93c5fd;
-    /* Rol 'Web developer', borde foto, acentos */
     --color-text-secondary: #cbd5e1;
-    /* Tagline del perfil (más claro que el menú) */
     --color-muted: #94a3b8;
-    /* Enlaces inactivos del nav y barrita */
 
-    /* --- Colores: Contenido Principal (Derecha) --- */
-    --bg-main: #e8f0fe;
-    /* Fondo azul claro de la columna derecha */
+    /* --- Colores: Contenido Principal --- */
+    --bg-main: #f1f5f9;
     --text-dark: #0f172a;
-    /* Títulos y texto en fondo claro */
     --bg-card: #ffffff;
-    /* Fondo de tarjetas (tecnologías, proyectos) */
 
     /* --- Estructura --- */
     --sidebar-width: 420px;
 
-    /* --- Bordes redondeados --- */
-    --radius-md: 8px;
-    /* Para tarjetas e iconos de tecnologías */
+    /* --- Bordes --- */
+    --radius-sm: 6px;
+    --radius-md: 10px;
     --radius-full: 9999px;
-    /* Para pastillas/tags (React, Django...) y botones */
 
     /* --- Transiciones --- */
     --transition: 0.3s ease;
-    --transition-links: 0.6s ease;
+
+    /* --- Tipografía: escala móvil (base) --- */
+    --fs-sm: 0.875rem;
+    /* labels, tags, nombres de iconos */
+    --fs-body: 1rem;
+    /* párrafos, texto general */
+    --fs-h3: 1.25rem;
+    /* subtítulos de categoría */
+    --fs-h2: 1.5rem;
+    /* títulos de sección */
+    --fs-h1: 2rem;
+    /* título principal (nombre) */
+
+    /* --- Font Weight --- */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* --- Espaciado --- */
+    --space-xs: 0.25rem;
+    /* 4px  — separaciones mínimas */
+    --space-sm: 0.5rem;
+    /* 8px  — gap entre iconos, tags */
+    --space-md: 1rem;
+    /* 16px — padding interno de cards */
+    --space-lg: 2rem;
+    /* 32px — padding de secciones */
+    --space-xl: 3rem;
+    /* 48px — padding de secciones grandes */
+
+    /* --- Sombras --- */
+    --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.07);
 }
 
+/* Variables Desktop y secciones comunes */
+@media (min-width: 1024px) {
+    :root {
+        --fs-sm: 0.95rem;
+        --fs-body: 1rem;
+        --fs-h3: 1.35rem;
+        --fs-h2: 2rem;
+        --fs-h1: 2.5rem;
+    }
 
+    section {
+        padding: var(--space-md) var(--space-xl);
+    }
+}
+
+/* --- Reset base --- */
 * {
     margin: 0;
     padding: 0;
@@ -48,10 +88,35 @@ a {
     text-decoration: none;
 }
 
+section {
+    padding: var(--space-md) var(--space-lg);
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Estilos base del documento --- */
+body {
+    color: var(--text-dark);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    font-weight: var(--fw-regular);
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    font-weight: var(--fw-bold);
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
 h2 {
-    font-size: 2rem;
+    font-size: var(--fs-h2);
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: var(--fs-h3);
 }
