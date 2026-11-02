@@ -24,7 +24,7 @@ export const sidebarData: SidebarData = {
   social: {
     linkedin: "https://linkedin.com/in/carlos-miguens",
     github: "https://github.com/carlosmi98",
-    email: "mailto:tu-email@ejemplo.com",
+    email: "mailto:carlosmiguens861@gmail.com",
   },
 };
 
@@ -95,9 +95,9 @@ export const experience: ExperienceItem[] = [
 
 export const contactInfo: ContactInfo = {
   title: "Get in touch",
-  description: "I'm open to new opportunities and would love to hear from you.",
+  description: "I'm currently looking for new opportunities in frontend and full stack development. If you'd like to discuss a role, a project, or a collaboration, feel free to reach out.",
   buttonText: "Send me an email",
-  email: "mailto:tu-email@ejemplo.com",
+  email: "mailto:carlosmiguens861@gmail.com",
 };
 
 export const projectsPage: ProjectsPageData = {

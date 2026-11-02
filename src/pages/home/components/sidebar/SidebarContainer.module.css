@@ -5,26 +5,12 @@
         padding: var(--space-md);
     }
 
-    .footerContainer {
-        display: none;
+@media (min-width: 1024px) {
+    .sidebar {
+        width: var(--sidebar-width);
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        border-radius: var(--radius-md);
     }
-
-    @media (min-width: 1024px) {
-
-
-        .sidebar {
-            width: var(--sidebar-width);
-            max-height: 100vh;
-            position: sticky;
-            top: 0;
-            border-radius: var(--radius-md);
-        }
-
-        .footerContainer {
-            display: flex;
-            margin-top: auto;
-            align-items: center;
-            justify-content: center;
-        }
-
-    }
+}

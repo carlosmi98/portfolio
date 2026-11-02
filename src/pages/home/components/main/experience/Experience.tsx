@@ -5,14 +5,14 @@ import styles from "./Experience.module.css";
 
 export const Experience = () => {
     return (
-        <section id="experience" className={styles.section}>
-            <h2 className={styles.h2}>Experience</h2>
+        <section id="experience">
+            <h2>Experience</h2>
             <ul className={styles.experienceList}>
                 {experience.map((expItem) => (
                     <li key={expItem.id} className={styles.expItem}>
                         <h3 className={styles.title}>{expItem.title}</h3>
                         <p className={styles.company}>{expItem.company}</p>
-                        <p className={styles.period}>{expItem.period}</p>
+                        <time className={styles.period}>{expItem.period}</time>
                         <p className={styles.type}>{expItem.type}</p>
                         <p className={styles.description}>{expItem.description}</p>
                         <ul>
