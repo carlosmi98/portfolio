@@ -42,7 +42,7 @@ export const Nav = () => {
                             </li>
                         ))}
                     </ul>
-                    <div className={styles.mobileFooter}>
+                    <div className={styles.navFooter}>
                         <Footer />
                     </div>
                 </div>

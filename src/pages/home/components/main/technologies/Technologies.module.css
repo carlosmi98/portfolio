@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: center;
     padding: var(--space-sm);
-    width: 20%;
+    flex: 1 1 70px;
     background-color: var(--bg-card);
     border: 1px solid var(--bg-sidebar);
     border-radius: var(--radius-md);
@@ -54,6 +54,7 @@
     .skillCard:hover {
         transform: translateY(-4px);
         box-shadow: var(--shadow-card);
+        border-color: var(--brand-color);
     }
 
     .skillCard:hover .icon,
