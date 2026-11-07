@@ -1,0 +1,7 @@
+.button {
+    margin: var(--space-lg) auto var(--space-lg) var(--space-md);
+}
+
+.info {
+    margin: var(--space-xl);
+}

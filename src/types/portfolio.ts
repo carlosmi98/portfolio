@@ -63,11 +63,18 @@ export interface ContactInfo {
   email: string;
 }
 
-export interface KeyFeature {
+export interface TechnicalHighlight {
   id: string;
   title: string;
   description: string;
   icon: string;
+}
+
+export interface ProjectFeature {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
 }
 
 export interface ProjectItem {
@@ -77,11 +84,16 @@ export interface ProjectItem {
   paragraphs: string[];
   tags: string[];
   image: string;
-  keyFeaturesTitle: string;
-  keyFeatures: KeyFeature[];
+  featuresTitle: string;
+  featuresSubtitle: string;
+  features: ProjectFeature[];
+  technicalHighlightsTitle: string;
+  technicalHighlightsSubtitle: string;
+  technicalHighlights: TechnicalHighlight[];
 }
 
 export interface ProjectsPageData {
+  backButtonText: string;
   title: string;
   subtitle: string;
   projects: ProjectItem[];

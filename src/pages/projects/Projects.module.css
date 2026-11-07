@@ -1,0 +1,7 @@
+.projectsContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    background-color: var(--bg-main);
+}
