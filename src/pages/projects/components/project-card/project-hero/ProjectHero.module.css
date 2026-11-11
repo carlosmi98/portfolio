@@ -1,12 +1,12 @@
 .header {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    display: flex;
+    flex-direction: column-reverse;
     padding: var(--space-lg) var(--space-lg);
 }
 
 .figure {
-    width: 430px;
-    height: 330px;
+    width: 330px;
+    height: 230px;
 }
 
 .img {
@@ -34,4 +34,17 @@
     color: var(--text-dark);
     font-size: var(--fs-sm);
     font-weight: var(--fw-medium);
+}
+
+@media (min-width: 1024px) {
+
+    .header {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .figure {
+        width: 430px;
+        height: 330px;
+    }
 }

@@ -4,4 +4,5 @@
 
 .info {
     margin: var(--space-xl);
+    margin-bottom: var(--space-md);
 }
