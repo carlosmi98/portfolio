@@ -123,42 +123,42 @@ export const projectsPage: ProjectsPageData = {
           title: "Daily Emotional Registration",
           description:
             "Interactive Sunburst emotion wheel inspired by Plutchik's model. Users select nuanced feelings, associate related activities, and write personal reflections.",
-          image: "/src/assets/project/features/register.png",
+          image: "/src/assets/project/features/feelifyme/registro-diario-emocional_feelifyme.png",
         },
         {
           id: "calendar",
           title: "Interactive Emotion Calendar",
           description:
             "Monthly calendar view displaying daily emotional badges, streak indicators, and quick navigation to historical records.",
-          image: "/src/assets/project/features/calendar.png",
+          image: "/src/assets/project/features/feelifyme/calendario_feelifyme.png",
         },
         {
           id: "timeline",
           title: "Chronological Daily Timeline",
           description:
             "A structured breakdown of every recorded day, showing all selected emotions, attached context, and reflective personal notes in timeline format.",
-          image: "/src/assets/project/features/timeline.png",
+          image: "/src/assets/project/features/feelifyme/resumen-diario-cronologico_feelifyme.png",
         },
         {
           id: "statistics",
           title: "Evolution & Analytical Dashboard",
           description:
             "Dynamic ECharts visualizations revealing emotional proportions, frequent activity correlations, and recurring behavioral trends month by month.",
-          image: "/src/assets/project/features/statistics.png",
+          image: "/src/assets/project/features/feelifyme/evolucion-grafica-emocional_feelifyme.png"
         },
         {
           id: "achievements",
           title: "Gamified Milestone System",
           description:
             "Progression system with total points, active streaks, unlocked badges, milestone achievements, and secret badges that encourage consistent emotional tracking.",
-          image: "/src/assets/project/features/achievements.png",
+          image: "/src/assets/project/features/feelifyme/logros_feelifyme.png",
         },
         {
           id: "profile",
           title: "User Profile & Account Settings",
           description:
             "Personal account management dashboard with customizable avatar cards, personal information, tracking preferences, and GDPR-compliant account deletion.",
-          image: "/src/assets/project/features/profile.png",
+          image: "/src/assets/project/features/feelifyme/perfil_feelifyme.png",
         },
       ],
       technicalHighlightsTitle: "Architecture & Engineering Highlights",
