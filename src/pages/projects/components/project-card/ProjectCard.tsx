@@ -1,6 +1,7 @@
 import type { ProjectItem } from "../../../../types/portfolio";
 import { ProjectHero } from "./project-hero/ProjectHero";
 import { ProjectFeatures } from "./features/ProjectFeatures";
+import { TechnicalHighlights } from "./highlights/TechnicalHighlights";
 import styles from "./ProjectCard.module.css";
 
 interface ProjectCardProps {
@@ -12,6 +13,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         <article className={styles.projectCard}>
             <ProjectHero project={project} />
             <ProjectFeatures project={project} />
+            <TechnicalHighlights project={project} />
         </article>
     );
 };
