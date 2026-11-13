@@ -5,6 +5,8 @@
 }
 
 .figure {
+    display: flex;
+    margin: 0 auto;
     width: 330px;
     height: 230px;
 }
