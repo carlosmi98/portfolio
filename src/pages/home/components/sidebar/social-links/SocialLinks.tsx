@@ -1,20 +1,20 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { sidebarData } from "../../../../../data/portfolioData";
-import styles from "./Footer.module.css";
+import styles from "./SocialLinks.module.css";
 
-export const Footer = () => {
+export const SocialLinks = () => {
     const { social } = sidebarData;
 
     return (
-        <div className={styles.footer}>
-            <ul className={styles.footerIcons}>
+        <div className={styles.socialContainer}>
+            <ul className={styles.socialIcons}>
                 <li>
                     <a
                         href={social.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="GitHub"
+                        aria-label="GitHub profile"
                     >
                         <FaGithub />
                     </a>
@@ -24,7 +24,7 @@ export const Footer = () => {
                         href={social.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="LinkedIn"
+                        aria-label="LinkedIn profile"
                     >
                         <FaLinkedin />
                     </a>
@@ -32,7 +32,7 @@ export const Footer = () => {
                 <li>
                     <a
                         href={social.email}
-                        aria-label="Email"
+                        aria-label="Send email"
                     >
                         <SiGmail />
                     </a>
@@ -42,4 +42,4 @@ export const Footer = () => {
     );
 };
 
-export default Footer;
+export default SocialLinks;

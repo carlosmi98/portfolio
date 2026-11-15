@@ -5,8 +5,7 @@ import { FaBars } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
 
 import { sidebarData } from "../../../../../data/portfolioData";
-
-import { Footer } from "../footer/Footer";
+import { SocialLinks } from "../social-links/SocialLinks";
 import styles from "./Nav.module.css";
 
 export const Nav = () => {
@@ -22,8 +21,13 @@ export const Nav = () => {
 
     return (
         <>
-            <nav className={styles.nav}>
-                <button onClick={handleNavbar} className={styles.menuButton} aria-label="Toggle menu">
+            <nav className={styles.nav} aria-label="Main navigation">
+                <button
+                    onClick={handleNavbar}
+                    className={styles.menuButton}
+                    aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+                    aria-expanded={isOpen}
+                >
                     {isOpen ? <FaTimes /> : <FaBars />}
                 </button>
                 <div className={`${styles.menuContainer} ${isOpen ? styles.open : ""}`}>
@@ -43,7 +47,7 @@ export const Nav = () => {
                         ))}
                     </ul>
                     <div className={styles.navFooter}>
-                        <Footer />
+                        <SocialLinks />
                     </div>
                 </div>
             </nav>
