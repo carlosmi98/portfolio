@@ -1,8 +1,8 @@
-.footer {
+.socialContainer {
     display: flex;
 }
 
-.footerIcons {
+.socialIcons {
     display: flex;
     flex-direction: row;
     gap: var(--space-xl);
@@ -13,7 +13,7 @@
 
 @media (min-width: 1024px) {
 
-    .footerIcons a {
+    .socialIcons a {
         font-size: 2rem;
         color: var(--color-muted);
         display: flex;
@@ -21,7 +21,7 @@
         transition: color var(--transition), transform var(--transition);
     }
 
-    .footerIcons a:hover {
+    .socialIcons a:hover {
         color: var(--color-white);
         transform: scale(1.15);
     }

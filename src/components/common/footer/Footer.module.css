@@ -1,0 +1,23 @@
+.footer {
+    width: 100%;
+    padding: var(--space-lg) var(--space-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.text {
+    font-size: var(--fs-sm);
+    color: var(--color-muted);
+    font-weight: var(--fw-regular);
+    text-align: center;
+    letter-spacing: 0.3px;
+    margin: 0;
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        padding: var(--space-xl) var(--space-md);
+    }
+}

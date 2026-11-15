@@ -98,3 +98,15 @@ export interface ProjectsPageData {
   subtitle: string;
   projects: ProjectItem[];
 }
+
+export interface NotFoundData {
+  badge: string;
+  title: string;
+  description: string;
+  buttonText: string;
+}
+
+
+export interface FooterData {
+  text: string;
+}

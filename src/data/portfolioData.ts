@@ -5,6 +5,8 @@ import type {
   ExperienceItem,
   ContactInfo,
   ProjectsPageData,
+  NotFoundData,
+  FooterData,
 } from "../types/portfolio";
 
 // Columna Izquierda (Fija)
@@ -209,4 +211,16 @@ export const projectsPage: ProjectsPageData = {
       ],
     },
   ],
+};
+
+
+export const notFoundData: NotFoundData = {
+  badge: "404 Error",
+  title: "Page Not Found",
+  description: "Sorry, the page you are looking for doesn't exist or has been moved.",
+  buttonText: "Back to Home",
+};
+
+export const footerData: FooterData = {
+  text: "© 2026 Carlos Miguéns · Built with React & TypeScript",
 };
