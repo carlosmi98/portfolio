@@ -24,13 +24,13 @@ export const FeatureModal = ({ feature, onClose }: FeatureModalProps) => {
     }, [onClose]);
 
     return (
-        <div className={styles.modal} onClick={onClose}>
+        <div className={styles.modal} onClick={onClose} role="dialog" aria-modal="true" aria-label={`${feature.title} details`}>
             <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
                 <div className={styles.header}>
                     <h2 className={styles.title}>{feature.title}</h2>
-                    <button className={styles.closeButton} onClick={onClose}>✕</button>
+                    <button className={styles.closeButton} onClick={onClose} aria-label="Close modal">✕</button>
                 </div>
-                <img src={feature.image} alt={feature.title} className={styles.image} />
+                <img src={feature.image} alt={`${feature.title} preview screenshot`} className={styles.image} />
                 <p className={styles.description}>{feature.description}</p>
             </div>
         </div>

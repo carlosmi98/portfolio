@@ -14,15 +14,28 @@ export const ProjectFeatures = ({ project }: { project: ProjectItem }) => {
             </div>
             <div className={styles.grid}>
                 {project.features.map((feature) => (
-                    <div key={feature.id} className={styles.card} onClick={() => setSelectedFeature(feature)}>
+                    <div
+                        key={feature.id}
+                        className={styles.card}
+                        onClick={() => setSelectedFeature(feature)}
+                        role="button"
+                        tabIndex={0}
+                        aria-label={`View ${feature.title} details`}
+                        onKeyDown={(e) => {
+                            if (e.key === "Enter" || e.key === " ") {
+                                e.preventDefault();
+                                setSelectedFeature(feature);
+                            }
+                        }}
+                    >
                         <figure className={styles.figure}>
                             <img src={feature.image} alt={feature.title} className={styles.img} />
                             <div className={styles.overlay}>
-                                <span className={styles.overlayIcon}>＋</span>
+                                <span className={styles.overlayIcon} aria-hidden="true">＋</span>
                             </div>
                         </figure>
                         <h4>{feature.title}</h4>
-                        <p className={styles.hint}>Toca para ver más</p>
+                        <p className={styles.hint}>Click to see more</p>
                     </div>
                 ))}
             </div>

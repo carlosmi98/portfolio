@@ -101,9 +101,20 @@
 @media (min-width: 1024px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-lg);
     }
 
     .figure {
-        height: 160px;
+        height: 180px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .grid {
+        gap: var(--space-xl);
+    }
+
+    .figure {
+        height: 220px;
     }
 }

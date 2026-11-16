@@ -42,11 +42,24 @@
 
     .header {
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: var(--space-xl);
     }
 
     .figure {
         width: 430px;
         height: 330px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .figure {
+        width: 520px;
+        height: 390px;
+    }
+
+    .header {
+        padding: var(--space-xl) var(--space-xl);
     }
 }
