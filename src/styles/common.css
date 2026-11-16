@@ -4,7 +4,7 @@
     --color-white: #ffffff;
     --color-accent: #93c5fd;
     --color-text-secondary: #cbd5e1;
-    --color-muted: #94a3b8;
+    --color-muted: #4c5665;
 
     /* --- Colores: Contenido Principal --- */
     --bg-main: #f1f5f9;
@@ -54,6 +54,9 @@
 
     /* --- Sombras --- */
     --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.07);
+
+    /* --- Contenedor Máximo --- */
+    --max-content-width: 1400px;
 }
 
 section {
@@ -62,11 +65,19 @@ section {
     flex-direction: column;
 }
 
+/* Tablet */
+@media (min-width: 768px) {
+    :root {
+        --fs-body: 1rem;
+        --fs-h2: 1.75rem;
+    }
+}
+
 /* Variables Desktop y secciones comunes */
 @media (min-width: 1024px) {
     :root {
         --fs-sm: 0.95rem;
-        --fs-body: 1rem;
+        --fs-body: 1.0625rem;
         --fs-h3: 1.35rem;
         --fs-h2: 2rem;
         --fs-h1: 2.5rem;
@@ -74,6 +85,23 @@ section {
 
     section {
         padding: var(--space-md) var(--space-xl);
+    }
+}
+
+/* Pantallas Grandes (Large Desktop / 1440px+) */
+@media (min-width: 1440px) {
+    :root {
+        --fs-sm: 1rem;
+        --fs-body: 1.125rem;
+        --fs-h3: 1.5rem;
+        --fs-h2: 2.25rem;
+        --fs-h1: 2.75rem;
+        --space-lg: 2.5rem;
+        --space-xl: 3.5rem;
+    }
+
+    section {
+        padding: var(--space-lg) var(--space-xl);
     }
 }
 

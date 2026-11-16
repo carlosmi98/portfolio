@@ -21,7 +21,7 @@ export const HighlightCard = ({ highlight }: { highlight: TechnicalHighlight }) 
         <aside className={styles.card}>
             <div className={styles.titleIcon}>
                 {IconComponent && (
-                    <div className={styles.icon}>
+                    <div className={styles.icon} aria-hidden="true">
                         {IconComponent}
                     </div>
                 )}

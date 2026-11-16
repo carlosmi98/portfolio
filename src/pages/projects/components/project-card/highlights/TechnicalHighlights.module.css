@@ -7,19 +7,33 @@
 .header {
     display: flex;
     flex-direction: column;
+    gap: var(--space-xs);
     padding: var(--space-md);
-
 }
 
 .grid {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    padding: var(--space-md);
 }
 
 @media (min-width: 768px) {
     .grid {
-        flex-direction: row;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-lg);
+    }
+}
+
+@media (min-width: 1440px) {
+    .grid {
+        gap: var(--space-xl);
     }
 }

@@ -12,6 +12,7 @@ export const TechIcon = ({ name, className }: TechIconProps) => {
     return (
         <IconComponent
             className={className}
+            aria-hidden="true"
         />
     );
 };

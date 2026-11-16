@@ -1,5 +1,6 @@
 import { contactInfo } from "../../../../../data/portfolioData";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
+import Button from "../../../../../components/common/button/Button";
 
 import styles from "./Contact.module.css";
 
@@ -8,13 +9,7 @@ export const Contact = () => {
         <section id="contact">
             <h2>{contactInfo.title}</h2>
             <p>{contactInfo.description}</p>
-            <a
-                href={contactInfo.email}
-                className={styles.emailContainer}
-            >
-                <MdOutlineMarkEmailRead className={styles.icon} />
-                <span>{contactInfo.buttonText}</span>
-            </a>
+            <Button texto={contactInfo.buttonText} href={contactInfo.email} icon={<MdOutlineMarkEmailRead />} className={styles.button} />
         </section>
     )
 }
