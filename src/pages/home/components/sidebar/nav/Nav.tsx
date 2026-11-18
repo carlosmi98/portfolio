@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { FaBars } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
@@ -11,9 +11,21 @@ import styles from "./Nav.module.css";
 export const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
 
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [isOpen]);
+
     const handleNavbar = () => {
-        setIsOpen(!isOpen)
-    }
+        setIsOpen(!isOpen);
+    };
 
     const handleNavClick = () => {
         setIsOpen(false);

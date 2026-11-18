@@ -99,13 +99,19 @@ export interface ProjectsPageData {
   projects: ProjectItem[];
 }
 
+export interface NotFoundAttribution {
+  text: string;
+  linkText: string;
+  url: string;
+}
+
 export interface NotFoundData {
   badge: string;
   title: string;
   description: string;
   buttonText: string;
+  attribution: NotFoundAttribution;
 }
-
 
 export interface FooterData {
   text: string;

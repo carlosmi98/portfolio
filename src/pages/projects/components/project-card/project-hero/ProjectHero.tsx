@@ -1,6 +1,6 @@
 import type { ProjectItem } from "../../../../../types/portfolio";
-import pc from "../../../../../assets/project/hero/pc.png";
 import styles from "./ProjectHero.module.css";
+
 export const ProjectHero = ({ project }: { project: ProjectItem }) => {
     return (
         <header className={styles.header}>
@@ -28,5 +28,5 @@ export const ProjectHero = ({ project }: { project: ProjectItem }) => {
                 </ul>
             </div>
         </header>
-    )
-}
+    );
+};

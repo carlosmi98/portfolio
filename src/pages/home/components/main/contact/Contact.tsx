@@ -6,10 +6,12 @@ import styles from "./Contact.module.css";
 
 export const Contact = () => {
     return (
-        <section id="contact">
+        <section id="contact" className={styles.contact}>
             <h2>{contactInfo.title}</h2>
-            <p>{contactInfo.description}</p>
+            <p className={styles.description}>{contactInfo.description}</p>
             <Button texto={contactInfo.buttonText} href={contactInfo.email} icon={<MdOutlineMarkEmailRead />} className={styles.button} />
         </section>
-    )
-}
+    );
+};
+
+export default Contact;
