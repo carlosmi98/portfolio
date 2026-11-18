@@ -8,11 +8,23 @@ export const NotFoundC = () => {
     return (
         <section className={styles.container}>
             <figure className={styles.figure}>
-                <img 
-                    src={lost} 
-                    alt="Lost illustration" 
-                    className={styles.image} 
-                />
+                <div className={styles.imageContainer}>
+                    <img 
+                        src={lost} 
+                        alt="Lost illustration" 
+                        className={styles.image} 
+                    />
+                </div>
+                <figcaption className={styles.caption}>
+                    {notFoundData.attribution.text}{" "}
+                    <a 
+                        href={notFoundData.attribution.url} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        {notFoundData.attribution.linkText}
+                    </a>
+                </figcaption>
             </figure>
 
             <span className={styles.badge}>{notFoundData.badge}</span>

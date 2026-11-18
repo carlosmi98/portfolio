@@ -8,7 +8,7 @@
     margin: var(--space-md) 0;
     gap: var(--space-sm);
     flex-wrap: wrap;
-    justify-content: flex-start
+    justify-content: flex-start;
 }
 
 .skillCard {
@@ -21,10 +21,11 @@
     background-color: var(--bg-card);
     border: 1px solid var(--bg-sidebar);
     border-radius: var(--radius-md);
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
 .icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
     background-color: var(--bg-card);
     color: var(--brand-color);
     transition: var(--transition);
@@ -35,22 +36,38 @@
 .iconName {
     font-size: var(--fs-sm);
     font-weight: var(--fw-bold);
+    margin-top: var(--space-xs);
+}
+
+@media (min-width: 768px) {
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        gap: var(--space-md);
+    }
+
+    .icon {
+        font-size: 3rem;
+    }
 }
 
 @media (min-width: 1024px) {
-
     .skills {
         display: grid;
         grid-template-columns: repeat(var(--columns), 1fr);
-        gap: var(--space-lg);
-
+        gap: var(--space-md);
     }
 
     .skillCard {
         width: 100%;
-        transition: var(--transition);
     }
 
+    .icon {
+        color: rgb(95, 86, 98);
+    }
+}
+
+@media (hover: hover) {
     .skillCard:hover {
         transform: translateY(-4px);
         box-shadow: var(--shadow-card);
@@ -61,17 +78,18 @@
     .skillCard:hover .iconName {
         color: var(--brand-color);
     }
+}
+
+@media (min-width: 1440px) {
+    .skills {
+        gap: var(--space-lg);
+    }
+
+    .skillCard {
+        padding: var(--space-md);
+    }
 
     .icon {
-        background-color: var(--bg-card);
-        color: rgb(95, 86, 98);
-        transition: var(--transition);
-
+        font-size: 3.5rem;
     }
-
-    .iconName {
-        font-size: var(--fs-sm);
-        font-weight: var(--fw-bold);
-    }
-
 }

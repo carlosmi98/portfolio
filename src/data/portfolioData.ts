@@ -9,6 +9,14 @@ import type {
   FooterData,
 } from "../types/portfolio";
 
+import pcHeroImg from "../assets/project/hero/pc.png";
+import registroEmocionalImg from "../assets/project/features/feelifyme/registro-diario-emocional_feelifyme.png";
+import calendarioImg from "../assets/project/features/feelifyme/calendario_feelifyme.png";
+import resumenCronologicoImg from "../assets/project/features/feelifyme/resumen-diario-cronologico_feelifyme.png";
+import evolucionGraficaImg from "../assets/project/features/feelifyme/evolucion-grafica-emocional_feelifyme.png";
+import logrosImg from "../assets/project/features/feelifyme/logros_feelifyme.png";
+import perfilImg from "../assets/project/features/feelifyme/perfil_feelifyme.png";
+
 // Columna Izquierda (Fija)
 export const sidebarData: SidebarData = {
   siteName: "carlos.site",
@@ -116,7 +124,7 @@ export const projectsPage: ProjectsPageData = {
         "FeelifyMe combines psychology and technology to create a modern emotional awareness experience. Through an interactive emotion wheel, users can explore emotions, gain insights and develop a deeper understanding of their emotional patterns.",
       ],
       tags: ["React", "Django", "PostgreSQL"],
-      image: "/src/assets/project/hero/pc.png",
+      image: pcHeroImg,
       featuresTitle: "Core Features & Interface Previews",
       featuresSubtitle: "A visual walkthrough of the user journey, daily emotional tracking, and analytics dashboards.",
       features: [
@@ -125,42 +133,42 @@ export const projectsPage: ProjectsPageData = {
           title: "Daily Emotional Registration",
           description:
             "Interactive Sunburst emotion wheel inspired by Plutchik's model. Users select nuanced feelings, associate related activities, and write personal reflections.",
-          image: "/src/assets/project/features/feelifyme/registro-diario-emocional_feelifyme.png",
+          image: registroEmocionalImg,
         },
         {
           id: "calendar",
           title: "Interactive Emotion Calendar",
           description:
             "Monthly calendar view displaying daily emotional badges, streak indicators, and quick navigation to historical records.",
-          image: "/src/assets/project/features/feelifyme/calendario_feelifyme.png",
+          image: calendarioImg,
         },
         {
           id: "timeline",
           title: "Chronological Daily Timeline",
           description:
             "A structured breakdown of every recorded day, showing all selected emotions, attached context, and reflective personal notes in timeline format.",
-          image: "/src/assets/project/features/feelifyme/resumen-diario-cronologico_feelifyme.png",
+          image: resumenCronologicoImg,
         },
         {
           id: "statistics",
           title: "Evolution & Analytical Dashboard",
           description:
             "Dynamic ECharts visualizations revealing emotional proportions, frequent activity correlations, and recurring behavioral trends month by month.",
-          image: "/src/assets/project/features/feelifyme/evolucion-grafica-emocional_feelifyme.png"
+          image: evolucionGraficaImg,
         },
         {
           id: "achievements",
           title: "Gamified Milestone System",
           description:
             "Progression system with total points, active streaks, unlocked badges, milestone achievements, and secret badges that encourage consistent emotional tracking.",
-          image: "/src/assets/project/features/feelifyme/logros_feelifyme.png",
+          image: logrosImg,
         },
         {
           id: "profile",
           title: "User Profile & Account Settings",
           description:
             "Personal account management dashboard with customizable avatar cards, personal information, tracking preferences, and GDPR-compliant account deletion.",
-          image: "/src/assets/project/features/feelifyme/perfil_feelifyme.png",
+          image: perfilImg,
         },
       ],
       technicalHighlightsTitle: "Architecture & Engineering Highlights",
@@ -213,12 +221,16 @@ export const projectsPage: ProjectsPageData = {
   ],
 };
 
-
 export const notFoundData: NotFoundData = {
   badge: "404 Error",
   title: "Page Not Found",
   description: "Sorry, the page you are looking for doesn't exist or has been moved.",
   buttonText: "Back to Home",
+  attribution: {
+    text: "Illustration by",
+    linkText: "Vecteezy",
+    url: "https://www.vecteezy.com/",
+  },
 };
 
 export const footerData: FooterData = {

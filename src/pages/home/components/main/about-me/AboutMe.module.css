@@ -4,4 +4,13 @@
     gap: var(--space-md);
 }
 
-@media (min-width: 1024px) {}
+.section p {
+    color: var(--text-dark);
+    line-height: 1.7;
+}
+
+@media (min-width: 1440px) {
+    .section {
+        gap: var(--space-lg);
+    }
+}

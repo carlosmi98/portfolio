@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import type { ReactNode } from "react";
-import type { IconBaseProps } from "react-icons";
 
 import styles from "./Button.module.css";
 

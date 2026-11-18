@@ -1,8 +1,27 @@
 .contact {
     display: flex;
     flex-direction: column;
+    gap: var(--space-md);
+}
+
+.description {
+    color: var(--text-dark);
+    line-height: 1.6;
+    max-width: 650px;
 }
 
 .button {
-    margin: var(--space-lg) auto;
+    margin: var(--space-md) auto 0;
+}
+
+@media (min-width: 768px) {
+    .button {
+        margin: var(--space-lg) 0 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .contact {
+        gap: var(--space-lg);
+    }
 }
