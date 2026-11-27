@@ -23,6 +23,20 @@ export const Nav = () => {
         };
     }, [isOpen]);
 
+    // Si el usuario cambia el tamaño de pantalla a desktop (>= 1024px), cerramos el menú móvil
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 1024) {
+                setIsOpen(false);
+            }
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     const handleNavbar = () => {
         setIsOpen(!isOpen);
     };

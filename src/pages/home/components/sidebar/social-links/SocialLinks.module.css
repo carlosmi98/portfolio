@@ -1,5 +1,7 @@
 .socialContainer {
     display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .socialIcons {
@@ -9,6 +11,7 @@
     margin: var(--space-md) auto;
     font-size: 2.25rem;
     color: var(--color-white);
+    padding: 0;
 }
 
 .socialIcons a {
@@ -28,8 +31,9 @@
 
 @media (min-width: 1024px) {
     .socialIcons {
-        font-size: 1.85rem;
-        gap: var(--space-lg);
+        font-size: 1.75rem;
+        gap: var(--space-md);
+        margin: var(--space-xs) auto;
     }
 
     .socialIcons a {
@@ -44,7 +48,8 @@
 
 @media (min-width: 1440px) {
     .socialIcons {
-        font-size: 2.1rem;
-        gap: var(--space-xl);
+        font-size: 2rem;
+        gap: var(--space-lg);
+        margin: var(--space-sm) auto;
     }
 }

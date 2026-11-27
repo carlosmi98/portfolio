@@ -1,11 +1,9 @@
 import { experience } from "../../../../../data/portfolioData";
-
-
 import styles from "./Experience.module.css";
 
 export const Experience = () => {
     return (
-        <section id="experience">
+        <section id="experience" className={styles.experience}>
             <h2>Experience</h2>
             <ul className={styles.experienceList}>
                 {experience.map((expItem) => (
@@ -32,7 +30,7 @@ export const Experience = () => {
                 ))}
             </ul>
         </section>
-    )
-}
+    );
+};
 
 export default Experience;

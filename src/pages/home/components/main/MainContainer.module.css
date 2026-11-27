@@ -5,17 +5,3 @@
     flex-direction: column;
     min-width: 0;
 }
-
-@media (min-width: 1024px) {
-    .mainContent {
-        border-radius: var(--radius-md);
-        margin: var(--space-sm);
-        margin-left: 0;
-    }
-}
-
-@media (min-width: 1440px) {
-    .mainContent {
-        margin: var(--space-md) var(--space-md) var(--space-md) 0;
-    }
-}
