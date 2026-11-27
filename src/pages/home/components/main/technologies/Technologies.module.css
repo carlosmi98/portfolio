@@ -1,14 +1,29 @@
-.category {
+.technologies {
     display: flex;
     flex-direction: column;
 }
 
+.technologies h2 {
+    margin-bottom: var(--space-xs);
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--space-md);
+}
+
+.category h3 {
+    margin-bottom: var(--space-xs);
+}
+
 .skills {
     display: flex;
-    margin: var(--space-md) 0;
+    margin: 0;
     gap: var(--space-sm);
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding: 0;
 }
 
 .skillCard {

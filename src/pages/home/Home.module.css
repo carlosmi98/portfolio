@@ -3,18 +3,14 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--bg-main);
 }
 
 @media (min-width: 1024px) {
     .homeContainer {
         flex-direction: row;
-        max-width: var(--max-content-width);
-        margin: 0 auto;
-    }
-}
-
-@media (min-width: 1440px) {
-    .homeContainer {
-        gap: var(--space-md);
+        width: 100%;
+        margin: 0;
+        max-width: 100%;
     }
 }

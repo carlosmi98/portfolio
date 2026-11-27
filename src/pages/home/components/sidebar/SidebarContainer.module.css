@@ -18,17 +18,20 @@
         width: var(--sidebar-width);
         min-width: var(--sidebar-width);
         height: 100vh;
+        max-height: 100vh;
         position: sticky;
         top: 0;
-        margin: var(--space-sm);
+        margin: 0;
         padding: var(--space-md);
-        border-radius: var(--radius-md);
+        box-sizing: border-box;
+        overflow: hidden;
     }
 }
 
 @media (min-width: 1440px) {
     .sidebar {
-        margin: var(--space-md) 0 var(--space-md) var(--space-md);
+        width: 440px;
+        min-width: 440px;
         padding: var(--space-lg);
     }
 }

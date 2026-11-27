@@ -103,20 +103,23 @@
     }
 
     .menuButton {
-        display: none;
+        display: none !important;
     }
 
-    .menuContainer {
-        display: flex;
+    .menuContainer,
+    .menuContainer.open {
+        display: flex !important;
         flex-direction: column;
         justify-content: flex-start;
         flex: 1;
-        height: 100%;
+        height: 100% !important;
+        width: auto !important;
         margin: 0 auto;
-        position: static;
-        padding: 0;
-        background-color: transparent;
-        overflow: visible;
+        position: static !important;
+        padding: 0 !important;
+        background-color: transparent !important;
+        overflow: visible !important;
+        z-index: auto !important;
     }
 
     .navList {

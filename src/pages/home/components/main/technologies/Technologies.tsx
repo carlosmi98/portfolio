@@ -5,7 +5,7 @@ import styles from "./Technologies.module.css";
 
 export const Technologies = () => {
     return (
-        <section id="technologies">
+        <section id="technologies" className={styles.technologies}>
             <h2>Technologies</h2>
             <p>{technologies.subtitle}</p>
             {technologies.categories.map((category) => (
@@ -31,7 +31,7 @@ export const Technologies = () => {
                 </div>
             ))}
         </section>
-    )
+    );
+};
 
-
-}
+export default Technologies;

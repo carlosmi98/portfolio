@@ -1,8 +1,18 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience h2 {
+    margin-bottom: var(--space-xs);
+}
+
 .experienceList {
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
     padding: 0;
+    margin-top: var(--space-md);
 }
 
 .expItem {
